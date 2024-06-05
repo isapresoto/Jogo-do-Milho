@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="jogo.css">
+    <title>Jogo do Milho</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.55.2/phaser.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 0;
+            background-image: url(IMG/fundoespan.png);
+        }
+        canvas {
+            display: block;
+            background-color: transparent; /* Certifica-se de que o canvas é transparente */
+            justify-content: certer;
+            align-items: center;
+            margin-top: 100px;
+            
+            z-index: 1;
+        }
+        p {
+            margin-top: 750px;
+            margin-left: 1500px;
+            font-size: 18px;
+            color: #ffffff;
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            z-index: 2;
+  
+        }
+    </style>
+</head>
+<body>
+    <canvas id="transparentCanvas" width="1600" height="600"></canvas>
+  <p>Use as setas do teclado para mover o jogador e colete 25 milhos. Boa sorte!</p>
+    
+    <script src="JS/main.js"></script>
+</body>
+</html>
